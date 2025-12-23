@@ -1,3 +1,4 @@
+#This script works but Tracker.gg will very likely just ban you (Just from using the api so it's not a big deal). So this script is not recommended. Use the RivalsMeta script instead.
 import cloudscraper
 import re
 import math
@@ -285,4 +286,5 @@ if __name__ == "__main__":
     match_ids = get_all_match_ids()
     print(f"{len(match_ids)} comp matches found")
     process_all_matches_parallel(match_ids, max_workers=30)
+
     print_tc()
